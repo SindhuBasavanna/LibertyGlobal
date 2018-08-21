@@ -31,7 +31,7 @@ Step1: In POSTMAN,
 	
 b. When we provide optional argument.
 Step1: In POSTMAN,
-	provide url: 	 (where N is the number of potato bags you want to fetch)
+	provide url: "http://localhost:8080/potatobags?noOfPotatoBags=N"  (where N is the number of potato bags you want to fetch)
 	Select "GET"
 	Click on Send.
 	N number of records will be retirved. (If number of records saved is less than N, then available number of records are fetched. 
