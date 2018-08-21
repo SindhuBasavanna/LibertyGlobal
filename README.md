@@ -21,7 +21,7 @@ Validation: If noOfPotato is not between 1 and 100 or price is not from 1 to 50 
 "Patatas Ruben","Yunnan Spices" then, data will not be insterted and throws same exception on POSTMAN screen.
 
 2. To get list of potato Bags.
-1. When we don't provide optional argument(by default 3 records will be fetched. If existing record is less than 3 then maximum 
+a. When we don't provide optional argument(by default 3 records will be fetched. If existing record is less than 3 then maximum 
 records will be fetched)
 Step1: In POSTMAN, 
 	provide url "http://localhost:8080/potatobags?noOfPotatoBags"  OR "http://localhost:8080/potatobags"
@@ -29,7 +29,7 @@ Step1: In POSTMAN,
 	Click on Send.
 	Records will be displayed in POSTMAN screen.
 	
-2. When we provide optional argument.
+b. When we provide optional argument.
 Step1: In POSTMAN,
 	provide url: 	 (where N is the number of potato bags you want to fetch)
 	Select "GET"
