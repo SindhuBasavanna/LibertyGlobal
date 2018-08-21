@@ -40,12 +40,6 @@ public class PotatoServiceTest {
 		potatoservice = new PotatoService();
 	}
 	
-	/*@Test
-	public void testAddPotatoBag() throws PotatoBagException{
-		when(genearteRandomStringMock.generateRandomString()).thenReturn("asdf45");
-		assertEquals("PotatoBag successfully insterted", potatoservice.addPotatoBag(potatoBag));
-	}*/
-
 	@Test(expected = PotatoBagException.class)
 	public void test_NoOfPotato_Greater_Than_Hundread() throws PotatoBagException   {
 		potatoBag = new PotatoBag();
