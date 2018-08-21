@@ -20,8 +20,12 @@ import com.libertyglobal.potatobag.util.Supplier;
  */
 @Service
 public class PotatoService {	
-	@Autowired
 	GenearteRandomString randomString;
+	
+	@Autowired
+	public void setRandomString(GenearteRandomString randomString) {
+		this.randomString = randomString;
+	}
 	private List<PotatoBag> potatoBag = new ArrayList<PotatoBag>();
 	private static Logger log = Logger.getLogger(PotatoService.class);
 		
