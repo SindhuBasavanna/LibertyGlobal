@@ -38,6 +38,12 @@ public class PotatoServiceTest {
 		potatoBag.setPrice(40);
 		potatoBag.setSupplier("De Coster");
 		potatoservice = new PotatoService();
+		potatoservice.setRandomString(genearteRandomStringMock);
+	}
+	@Test
+	public void testAddPotatoBag() throws PotatoBagException{
+		when(genearteRandomStringMock.generateRandomString()).thenReturn("oBOkrohmq7");
+		assertEquals("PotatoBag successfully insterted", potatoservice.addPotatoBag(potatoBag));
 	}
 	
 	@Test(expected = PotatoBagException.class)
