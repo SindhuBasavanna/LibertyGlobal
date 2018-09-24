@@ -1,4 +1,4 @@
-# LibertyGlobal
+
 Once u checkout the repository. Import the project as Maven project. All the necessary dependency jars will be downloaded automatically.
 Once it imports all the jars go to "SpringBootApplication.java" and run as "java application". 
 Note:No need to do server setup as I am using springboot and springboot internally uses tomcat server so we can run this application as 
